@@ -1,0 +1,5 @@
+<h1>Stores#index</h1>
+
+<% @store.each do |str| %>
+    <%= link_to str.name, store_path(str.id) %>
+<% end %>

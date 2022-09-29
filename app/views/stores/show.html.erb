@@ -1,0 +1,7 @@
+<h1>Products</h1>
+
+<ul>
+<% @products.each do |product| %>
+    <%= button_to product.name, products_path(name: product.name, store_id: @store.id), method: :post %>
+<% end %>
+</ul>
